@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+venv_*/
+.venv/
+
+# IDEs
+.vscode/
+.idea/
+.DS_Store
+
+# DONNÉES (géré par DVC)
+data/raw/*.csv
+data/processed/*.csv
+!data/raw/.gitignore
+!data/processed/.gitignore
+
+# MODÈLES (géré par DVC/MLflow)
+models/*.pkl
+models/*.h5
+models/exported/
+!models/.gitignore
+
+# MLFLOW (trop gros)
+mlruns/
+mlartifacts/
+
+# DVC STORAGE (remote)
+dvc_storage/
+
+# ZENML
+zenml/
+.zen/
+
+# Docker
+*.log
+
+# Tests
+.pytest_cache/

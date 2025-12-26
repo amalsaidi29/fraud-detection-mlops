@@ -1,0 +1,9 @@
+﻿*.csv
+*.pkl
+*.db
+.dvc/cache/
+mlruns/
+dvc_storage/
+data/processed/
+models/
+.git.backup*/
